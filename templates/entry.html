@@ -1,0 +1,33 @@
+{% extends 'master.html' %}
+{% block content %}
+	<center><h1><a href= "/blog">BlogNow</a></h1></center>	
+	<div class="form">
+	<form method="POST">
+		<div class="subject-entry">
+			<label><b>Subject:</b><br>
+				<input type="text" name="subject" value= "{{subject}}" >
+			</label>
+		</div>
+			
+		<br>	
+		<div class="content-entry">
+			<label><b>Content:</b><br>
+				<textarea name = "content" rows = 20 cols = 70>{{content}}</textarea>&nbsp;&nbsp;&nbsp;
+			</label>
+		</div>
+		
+		<br>
+		<div class="btn">
+			<input type = "submit" value="Post">
+		</div>
+		
+	</form>
+	</div>
+	<br>
+		
+	{{error}}
+	<br>
+	<center>&copy; <b>TranshapHigsn</b></center>
+	<br>
+		
+{% endblock %}		

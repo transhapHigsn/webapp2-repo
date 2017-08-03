@@ -1,0 +1,49 @@
+input{
+	font-size: 15px;
+	font-family: Arial, sans-serif;
+	color: cadetblue;
+	margin: 5px;
+	max-width:60%;
+	border-radius: 5px;
+	padding:2px;
+}
+.col-3{
+	text-align: left;
+}
+.error{
+	margin:5px;
+	color: red;
+	font-weight: bolder;
+}
+
+.form{
+	margin-left:35%;
+	margin-right:35%;
+	padding-left: 10px;
+	padding-top:10px;
+	padding-bottom: 5px;
+	border: 2px groove;
+}
+
+label{
+	font-family: 'Oswald', sans-serif;
+	max-width: 40%;
+}
+
+input[type="submit"]{
+	text-align: center;
+	width:100px;
+	max-width:50%;
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
+.heading{
+	text-align: center;
+	font-family: 'Kaushan Script', cursive;
+}
+
+.error{
+	text-align:center;
+	color:red;
+}

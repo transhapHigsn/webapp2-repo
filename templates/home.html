@@ -1,0 +1,27 @@
+{% extends 'master.html' %}
+{% block content %}
+	<center><h1><a href= "/blog/newpost">BlogNow</a></h1></center>
+	<br>
+		{% for entry in entries %}
+		<div class="post">
+			<div class="header">
+				<div class="title">
+					<a href="/blog"><b>{{entry.subject}}</b></a>
+				</div>
+				<div class="date-time">
+					{{entry.created}}
+				</div>
+			</div>
+			
+			<hr>
+			
+			<div class="blog">
+				{{entry.content}}
+			</div>
+			
+		</div>
+		<br>
+			
+		{% endfor %}
+		<i>Click on BlogNow to write a new post.</i>
+{% endblock %}		

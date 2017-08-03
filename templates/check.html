@@ -1,0 +1,20 @@
+<form method="POST">
+		<label><b>Name</b><br>
+			<input type="text" name="name" value= "{{name}}" >
+		</label>
+			
+		<br>	
+			
+		<label><b>Content:</b><br>
+			<textarea name = "content" rows = 20 cols = 70>{{content}}</textarea>&nbsp;&nbsp;&nbsp;
+		</label>	
+		<br>
+		<input type = "submit" value="Post">
+	</form>
+	
+	{% for result in results %}
+		{{result.name}}
+		<hr>
+		{{result.content}}
+		<br><br><br>
+	{% endfor %}

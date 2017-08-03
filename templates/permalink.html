@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Learning about building blog</title>
+		<link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Chewy" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Marck+Script" rel="stylesheet">
+		<style>
+			.title{
+				text-align: center;
+				font-size: 20px;
+				font-family: 'Marck Script', cursive;
+
+			}
+			.info{
+				margin-left:25%;
+				margin-right:25%;
+				box-shadow: 2px 1px grey, -0.2em 0 0.5em grey ;
+			}
+
+			.blog{
+				width : 95%;
+				padding : 17px;
+				text-align: justify; 
+				font-size: large;
+				font-family: 'Satisfy', cursive;
+			}
+
+			a{
+				text-decoration: none; 
+			}
+
+			h1{
+				font-size: 35px;
+				color: darkgoldenrod;
+				}
+				
+		</style>
+	</head>
+	
+	<body>
+		<center>
+			<h1>
+				Higsn Blog: BlogNow
+			</h1>
+		</center>
+		
+	<div class = "info">
+		
+		<div class ="title">
+			<h2>{{subject}}</h2>
+		</div>
+		
+		<div class="blog">
+			{{content}}
+		</div>
+	</div>
+	
+	<div class="link">
+		<b><a href="/blog">Home</a></b>
+	</div>
+	
+	<br>
+	<i>{{message}}</i>
+	<i>To go back on home page, click on Home.</i>
+
+	</body>
+</html>

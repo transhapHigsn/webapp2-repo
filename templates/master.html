@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Learning about building blog</title>
+		<!--<link rel="stylesheet" type="text/css" href="/static/main.css" />-->
+		<link href="https://fonts.googleapis.com/css?family=Tangerine:400,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Limelight" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Titan+One" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Milonga" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+		<style>
+			.blog{
+				font-size: 15px;
+				width:95%;
+				padding:17px;
+				text-align: justify; 
+				font-size: large;
+				font-family: 'Courgette', cursive;
+			}
+
+			a{
+				text-decoration: none; 
+			}
+
+			.post{
+				margin-left:15%;
+				margin-right:15%;
+				box-shadow: 2px 1px grey, -0.2em 0 0.5em grey;
+			}
+
+			.title{
+				padding:10px;
+				width:40%;
+				font-family: 'Milonga', cursive;
+				font-size:25px;
+			}
+			
+			h1{
+				color: darkgoldenrod;
+			}
+			
+			.header{
+				margin: 10px;
+				display : flex;
+			}
+			
+			.date-time{
+				padding:10px;
+				text-align : right;
+				width:60%;
+			}
+			
+			.form{
+				width:80%;
+				
+				margin-left:10%;
+				margin-right: 10%;
+
+				padding-right: 10px;
+				padding-left: 10px;
+				padding-top: 10px;
+
+			}
+
+			.subject-entry{
+
+			}
+
+			.content-entry{
+				margin-top:15px;
+			}
+
+			.btn{
+				margin-left:270px;
+				padding-left:100px;
+			}
+
+			label{
+				font-family: 'Cuprum', sans-serif; 
+			}
+
+			input[type="text"]{
+				padding: 3px;
+				font-family: 'Limelight', cursive;
+				font-size:25px;
+				font-weight: bolder;
+				width:500px;
+				border-style: groove;
+			}
+
+			textarea{
+				font-family: 'Bad Script', cursive;
+				font-size:20px;
+				border-width: thick;
+				width: 80%;
+				max-width:80%;
+				height: 800px;
+				max-height: 800px;
+			}
+
+			input[type="submit"]{
+				width:100px;
+				height:35px;
+				font-family: 'Titan One', cursive;
+			}
+		</style>
+	</head>
+	
+	<body style="margin: 2px;">
+		<center><h1> <!--style="background-color: #ddd color: #888 margin: 0 height:50px"> -->
+		Higsn Blog: BlogNow
+		</h1>
+		</center>
+		{% block content %}
+		{% endblock %}
+	</body>
+</html>
